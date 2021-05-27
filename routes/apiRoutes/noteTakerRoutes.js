@@ -12,6 +12,11 @@ router.get('/notes', (req, res) => {
 });
 
 // route = request notes data by id
+router.get('/notes/:id', (req, res) => {
+    
+}
+
+)
 
 // route = post new note
 
