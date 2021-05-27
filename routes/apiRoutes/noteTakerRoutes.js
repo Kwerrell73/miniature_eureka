@@ -1,6 +1,8 @@
 const router = require('express').Router();
-const { addNote, validateNote, findById, deleteByID } = require('../../lib/notes');
+const { addNote, validateNote, findById, deleteNoteByID } = require('../../lib/notes');
 const { notes } = require('../../db/db');
+
+const shortid = require('shortid');
 
 // Routes outlined below 
 
@@ -17,7 +19,7 @@ router.get('/notes/:id', (req, res) => {
     if (result) {
       res.json(result);
     } else {
-      res.send(err, 404);
+      res.send(404);
     }
 });
 
@@ -28,7 +30,7 @@ router.post('/notes', (req, res) => {
     req.body.id = shortid.generate();
    
     if(!validateNote(req.body)) {
-        res.status(err, 400).send('The note is not properly formatted.');
+        res.status(400).send('The note is not properly formatted.');
     } else {
        const note = addNote(req.body, notes);
        res.json(note);
@@ -39,11 +41,11 @@ router.delete('/notes/:id', (req, res) => {
     const noteId = req.params.id;
     const noteExists = findById(noteId, notes);
     if (noteExists) {
-      const newNotes = deleteByID(noteId, notes);
+      const newNotes = deleteNoteByID(noteId, notes);
       res.json(newNotes);
     } 
     else {
-      res.send(err, 404);
+      res.send(404);
     }
 })
 
