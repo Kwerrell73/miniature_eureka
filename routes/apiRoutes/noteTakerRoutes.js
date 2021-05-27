@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { addNote, validateNote, findById, deleteByID } = require('../../lib/notes');
+const { addNote, validateNote, findNoteById, deleteNoteByID } = require('../../lib/notes');
 const { notes } = require('../../db/db');
 
 // Routes outlined below 
