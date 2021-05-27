@@ -1,6 +1,35 @@
+{ "notes":
+
 [
     {
-        "title":"Test Title",
-        "text":"Test text"
+        "title":"Laundry",
+        "text":"Wash, fold, hang, and put away laundry",
+        "id":"A1"
+
+    },
+
+    {
+        "title":"Homework",
+        "text":"Work on Challenge 11, turn in by Sunday @ midnight",
+        "id":"B2"
+
+    },
+
+    {
+        "title":"Addresses",
+        "text":"Updated family addresses on zip file",
+        "id":"C3"
+
+    },
+
+    {
+        "title":"Plumber",
+        "text":"Make appt with plumber to check garbage disposal",
+        "id":"D4"
+
     }
+
 ]
+
+
+}
