@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { addNote, validateNote, findById, deleteNoteByID } = require('../../lib/notes');
 const { notes } = require('../../db/db');
 
-const nanoid = require('nanoid');
+const shortid = require('shortid');
 
 // Routes outlined below 
 
@@ -27,7 +27,7 @@ router.get('/notes/:id', (req, res) => {
 // route = post new note
 router.post('/notes', (req, res) => {
    
-    req.body.id =nanoid.generate();
+    req.body.id = shortid.generate();
    
     if(!validateNote(req.body)) {
         res.status(400).send('The note is not properly formatted.');
