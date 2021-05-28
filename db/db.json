@@ -1,44 +1,24 @@
 {
   "notes": [
     {
-      "title": "Laundry",
-      "text": "Wash, fold, hang, and put away laundry",
-      "id": "A1"
-    },
-    {
-      "title": "Homework",
-      "text": "Work on Challenge 11, turn in by Sunday @ midnight",
-      "id": "B2"
-    },
-    {
-      "title": "Addresses",
-      "text": "Updated family addresses on zip file",
-      "id": "C3"
-    },
-    {
-      "title": "Plumber",
-      "text": "Make appt with plumber to check garbage disposal",
-      "id": "D4"
-    },
-    {
-      "title": "Car",
-      "text": "Get quote for tans",
-      "id": "rLKXiW1rB"
-    },
-    {
-      "title": "Class",
-      "text": "Turn in homework",
-      "id": "wFhfbHl1v"
-    },
-    {
-      "title": "New",
-      "text": "test",
-      "id": "cggDv2ysH"
-    },
-    {
       "title": "Sleep",
       "text": "More",
       "id": "kUU7l2yJ_"
+    },
+    {
+      "title": "Mechanic",
+      "text": "Get quote for new trans on 65 chevy",
+      "id": "rhUh-QEP-"
+    },
+    {
+      "title": "Tutoring",
+      "text": "Get smart",
+      "id": "a9YkYyqjs"
+    },
+    {
+      "title": "test",
+      "text": "testing",
+      "id": "nhInscR7a"
     }
   ]
 }

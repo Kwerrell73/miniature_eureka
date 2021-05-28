@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const fs = require('fs');
 const { addNote, validateNote, findById, deleteNoteByID } = require('../../lib/notes');
 const { notes } = require('../../db/db');
 
@@ -38,7 +39,8 @@ router.post('/notes', (req, res) => {
 });
 // route = delete note
 router.delete('/notes/:id', (req, res) => {
-    const uniqueNoteId = req.params.id;
+  const noteData = JSON.parse(fs.readFileSync('db/db.json'), 'utf8');  
+  const uniqueNoteId = req.params.id;
     const noteExists = findById(uniqueNoteId, notes);
     if (noteExists) {
       const newNotes = deleteNoteByID(uniqueNoteId, notes);
