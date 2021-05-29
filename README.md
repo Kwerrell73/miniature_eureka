@@ -2,7 +2,7 @@
 A note taking application that stores data on a server so the notes can be accessed from any device. 
 
 ## Link to Deployed Application
-https://fathomless-headland-80536.herokuapp.com/
+https://notetakerkw.herokuapp.com/
 
 ## Built With
 * JavaScript
@@ -16,11 +16,8 @@ https://fathomless-headland-80536.herokuapp.com/
 
 
 ## Screenshots of tests
-![](./assets/images/screenshots/testscreenshotsone.png)
-![](./assets/images/screenshots/testscreenshotstwo.png)
-
-## Screenshot of rendered HTML
-![](./assets/images/screenshots/renderedHTML.png)
+![](./public/assets/images/notetakerone.png)
+![](./public/assets/images/notetakertwo.png)
 
 
 ## Contribution
